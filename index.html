@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080B12">
+  <title>DEADLINE & TARTIP — Live</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Deadline and Tartip home">
+        <span class="brand-mark">D<span>&</span>T</span>
+        <span class="brand-name">DEADLINE <b>& TARTIP</b></span>
+      </a>
+      <div class="side-label">MENU</div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-link active" data-view="home"><span>⌂</span> Home</button>
+        <button class="nav-link" data-view="browse"><span>▦</span> Browse</button>
+        <button class="nav-link" data-view="following"><span>♡</span> Following</button>
+      </nav>
+      <div class="side-divider"></div>
+      <div class="side-heading"><span>LIVE CHANNELS</span><span class="live-dot"></span></div>
+      <div class="channel-list">
+        <button class="channel"><span class="avatar blue">A</span><span class="channel-copy"><b>anwar_live</b><small>Just chatting</small></span><span class="viewers">1.2k</span></button>
+        <button class="channel"><span class="avatar cyan">G</span><span class="channel-copy"><b>gamezone</b><small>Gaming</small></span><span class="viewers">846</span></button>
+        <button class="channel"><span class="avatar slate">M</span><span class="channel-copy"><b>music_room</b><small>Music</small></span><span class="viewers">320</span></button>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="mini-card"><span class="mini-icon">✦</span><div><b>Make your mark</b><small>Build your community.</small></div></div>
+        <button class="sidebar-login" id="sidebarLogin">Log in to follow creators</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+        <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search streams, creators, categories..." aria-label="Search"></div>
+        <div class="top-actions">
+          <button class="icon-btn" title="Notifications" aria-label="Notifications">♧</button>
+          <button class="outline-btn" id="loginBtn">Log in</button>
+          <button class="primary-btn" id="signupBtn">Sign up</button>
+          <button class="profile-button" id="profileButton" title="Profile">A</button>
+        </div>
+      </header>
+
+      <section class="content" id="homeView">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="live-pill"><i></i> LIVE PLATFORM</span><span class="eyebrow-line"></span><span>YOUR COMMUNITY STARTS HERE</span></div>
+            <h1>Watch. Stream.<br><span>Connect.</span></h1>
+            <p>Discover live moments, meet creators and find your people on DEADLINE & TARTIP.</p>
+            <div class="hero-actions"><button class="primary-btn large" data-view="browse">Explore streams <span>↗</span></button><button class="ghost-btn" id="heroSignup">Create an account</button></div>
+          </div>
+          <div class="hero-art" aria-label="Abstract blue live streaming artwork">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="play-tile"><span>▶</span></div>
+            <div class="floating-tag tag-live"><i></i> LIVE NOW</div>
+            <div class="floating-tag tag-viewers">◉ &nbsp; 1,248 watching</div>
+            <div class="art-glow"></div>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><div class="section-kicker">DON'T MISS OUT</div><h2>Featured live streams</h2></div>
+          <button class="text-link" data-view="browse">View all <span>→</span></button>
+        </div>
+        <div class="stream-grid" id="streamGrid">
+          <article class="stream-card" data-search="anwar live just chatting community">
+            <button class="stream-thumb thumb-one" data-stream="anwar_live" aria-label="Open Anwar live stream"><span class="thumb-badge"><i></i> LIVE</span><span class="thumb-art art-one">D&T<span>LIVE</span></span><span class="thumb-duration">01:24:08</span></button>
+            <div class="stream-info"><span class="avatar blue">A</span><div class="stream-meta"><b>anwar_live</b><span>Building a new community 🚀</span><small>Just Chatting · English</small></div><button class="more-btn" aria-label="More options">···</button></div>
+            <div class="stream-foot"><span class="category-tag">Just Chatting</span><span>◉ 1.2K viewers</span></div>
+          </article>
+          <article class="stream-card" data-search="gamezone gaming adventure">
+            <button class="stream-thumb thumb-two" data-stream="gamezone" aria-label="Open Gamezone stream"><span class="thumb-badge"><i></i> LIVE</span><span class="thumb-art art-two">GAME<br>ZONE</span><span class="thumb-duration">00:48:32</span></button>
+            <div class="stream-info"><span class="avatar cyan">G</span><div class="stream-meta"><b>gamezone</b><span>Late night gaming session</span><small>Gaming · English</small></div><button class="more-btn" aria-label="More options">···</button></div>
+            <div class="stream-foot"><span class="category-tag">Gaming</span><span>◉ 846 viewers</span></div>
+          </article>
+          <article class="stream-card" data-search="music room live music">
+            <button class="stream-thumb thumb-three" data-stream="music_room" aria-label="Open Music Room stream"><span class="thumb-badge"><i></i> LIVE</span><span class="thumb-art art-three">SOUND<br>SPACE</span><span class="thumb-duration">02:06:14</span></button>
+            <div class="stream-info"><span class="avatar slate">M</span><div class="stream-meta"><b>music_room</b><span>Chill music and requests</span><small>Music · Kazakh</small></div><button class="more-btn" aria-label="More options">···</button></div>
+            <div class="stream-foot"><span class="category-tag">Music</span><span>◉ 320 viewers</span></div>
+          </article>
+        </div>
+
+        <div class="section-heading category-heading"><div><div class="section-kicker">FIND YOUR SPACE</div><h2>Browse categories</h2></div></div>
+        <div class="category-grid">
+          <button class="category-card cat-gaming" data-category="Gaming"><span>🎮</span><b>Gaming</b><small>Explore gameplay</small></button>
+          <button class="category-card cat-music" data-category="Music"><span>♫</span><b>Music</b><small>Listen together</small></button>
+          <button class="category-card cat-chat" data-category="Just Chatting"><span>☻</span><b>Just Chatting</b><small>Talk and connect</small></button>
+          <button class="category-card cat-creative" data-category="Creative"><span>✧</span><b>Creative</b><small>Make something</small></button>
+        </div>
+        <footer class="footer"><span>© 2026 DEADLINE & TARTIP</span><span>Built for creators and communities.</span></footer>
+      </section>
+
+      <section class="content hidden" id="browseView">
+        <div class="page-title"><div class="section-kicker">DISCOVER SOMETHING NEW</div><h1>Browse streams</h1><p>Find a live channel that matches your mood.</p></div>
+        <div class="filter-row"><button class="filter-chip selected" data-filter="All">All</button><button class="filter-chip" data-filter="Gaming">Gaming</button><button class="filter-chip" data-filter="Music">Music</button><button class="filter-chip" data-filter="Just Chatting">Just Chatting</button><button class="filter-chip" data-filter="Creative">Creative</button></div>
+        <div class="stream-grid" id="browseGrid"></div>
+      </section>
+
+      <section class="content hidden" id="followingView">
+        <div class="page-title"><div class="section-kicker">YOUR PEOPLE</div><h1>Following</h1><p>Creators you follow will appear here.</p></div>
+        <div class="empty-state"><div class="empty-icon">♡</div><h2>Your feed starts here</h2><p>Log in and follow creators to build your personal live feed.</p><button class="primary-btn" id="followingLogin">Log in</button></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="auth-modal">
+      <button class="close-modal" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-brand">D<span>&</span>T</div>
+      <div class="section-kicker">WELCOME TO THE COMMUNITY</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p class="modal-subtitle">Join creators and communities on D&T.</p>
+      <form id="authForm">
+        <label id="nameLabel">Display name<input id="displayName" type="text" placeholder="Your display name" autocomplete="nickname"></label>
+        <label>Email address<input id="email" type="email" placeholder="you@example.com" autocomplete="email" required></label>
+        <label>Password<input id="password" type="password" placeholder="At least 6 characters" minlength="6" autocomplete="new-password" required></label>
+        <button class="primary-btn full-width" id="authSubmit" type="submit">Create account</button>
+      </form>
+      <div class="auth-switch"><span id="switchText">Already have an account?</span> <button id="switchMode">Log in</button></div>
+      <p class="auth-message" id="authMessage" role="status"></p>
+      <p class="secure-note">Your password is handled by Supabase Auth when connected. Never share it with anyone.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
